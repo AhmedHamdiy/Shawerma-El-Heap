@@ -1,0 +1,94 @@
+{
+    "restaurant_name": "Shawerma El Heap",
+    "location": "6th October City, El Hosary Square", 
+    "menu_sections": [
+        {
+        "section_name": "Sandwiches", 
+        "dishes": [ 
+            {
+                "dish_name": "Shawerma Saj", 
+                "description": "Awesome Chicken Shawarma sandwich served in saj bread. Can be served with Tahini sauce or Toum.", 
+                "price": 49.99, 
+                "rating": 4.7,
+                "image_url": "https://media-cdn.tripadvisor.com/media/photo-s/10/59/1f/a9/saj-shawarma.jpg"
+            },
+
+            {
+                "dish_name": "Chicken Strips", 
+                "description": "Delicious Chicken Strips sandwich served in brioche bread. Served with chips.",
+                "price": 36.99, 
+                "rating": 4.8, 
+                "image_url": "https://1.bp.blogspot.com/-_ujV-vw7ZGE/Xuv7HUSh6XI/AAAAAAABMag/6oQjPMxJBloN65bXDdcnphE8lRo-CGK0QCLcBGAsYHQ/s1600/whataburger-honey-bbq-chicken-strip-sandwich.png"
+            },
+
+            {
+                "dish_name": "French Fries Saj", 
+                "description": "Awesome French Fries sandwich served in saj bread. Can be served with Tahini sauce or Toum.", 
+                "price": 19.99, 
+                "rating": 4.2,
+                "image_url": "https://www.sajway.com/sajadmin/public/storage/products/Fmwtwt4FF6eBIJ0pEFYViUvojisIovjFKlRuFyhU.jpeg"
+            }
+        ] 
+        },
+
+        {
+        "section_name": "Meals",
+        "dishes": [
+            {
+                "dish_name": "Arabian Shawerma", 
+                "description": "Delicious Arabian Chicken Shawerma meal with chips.",
+                "price": 48.99, 
+                "rating": 4.3, 
+                "image_url": "https://laffahrestaurant.com/laffah_medai/2016/07/ALI_6717-1170x780.jpg"
+            },
+
+            {
+                "dish_name": "Mexican Shawerma",
+                "description": "Delicious Arabian Chicken Shawerma meal with chips.", 
+                "price": 56.99, 
+                "rating": 4.4, 
+                "image_url": "https://pulutan.club/wp-content/uploads/sites/13/2018/04/jerusalem-shawarma-1.jpg"
+            },
+
+            {
+                "dish_name": "Shawerma Fatta", 
+                "description": "Delicious Shawerma Fatta meal with chips and toasted bread.", 
+                "price": 56.99, 
+                "rating": 4.5, 
+                "image_url": "https://c8.alamy.com/comp/2K259AH/pieces-of-chicken-shawarma-with-yellow-basmati-rice-syrian-bread-and-garlic-sauce-selective-focus-of-shawerma-fattah-or-fatteh-syrian-fast-food-cui-2K259AH.jpg"
+            } 
+        ]
+        },
+
+        {   
+        "section_name": "Desserts", 
+        "dishes": [ 
+            {
+                "dish_name": "Ice Cream Cup", 
+                "description": "Cold chocolate ice cream with variety of flavors.", 
+                "price": 29.99, 
+                "rating": 4.7, 
+                "image_url": "https://media.istockphoto.com/id/486043439/photo/chocolate-ice-cream.jpg?s=612x612&w=0&k=20&c=vZ--SHTfx2Yl0QwXwKQChhpa_ANs8euZ-XFZYJ6JNuI="
+            },
+
+            {
+            "dish_name": "Chocolate Cake", 
+            "description": "Warm chocolate cake with a gooey molten center. Served with vanilla ice cream.", 
+            "price": 24.99, 
+            "rating": 4.8, 
+            "image_url": "https://ichef.bbci.co.uk/food/ic/food_16x9_832/recipes/easy_chocolate_cake_31070_16x9.jpg"
+            },
+            
+            {
+                "dish_name": "Cheese Cake", 
+                "description": "Classic creamy cheesecake topped with your choice of fruit compote.", 
+                "price": 24.99, 
+                "rating": 4.2, 
+                "image_url": "https://preppykitchen.com/wp-content/uploads/2022/07/Cheesecake-Social-new.jpg"
+            }
+                
+        ] 
+        }
+        
+    ]
+}
