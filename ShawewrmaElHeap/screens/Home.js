@@ -7,9 +7,9 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
-import RestaurantTitle from "../Components/RestaurantTitle";
+import RestaurantTitle from "../components/RestaurantTitle";
 
-const Home = () => {
+const Home = ({ navigation }) => {
   return (
     <ImageBackground
       source={require("../Final-design/background-image.jpg")}
@@ -19,10 +19,17 @@ const Home = () => {
         <RestaurantTitle style={styles.titleContainer} />
 
         <View style={styles.ButtonsContainer}>
-          <TouchableOpacity style={styles.button}>
+          <TouchableOpacity
+            style={styles.button}
+            onPress={() => navigation.navigate("Menu")}
+          >
             <Text style={styles.buttonText}>Let's Eat!</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.button}>
+
+          <TouchableOpacity
+            style={styles.button}
+            onPress={() => navigation.navigate("About")}
+          >
             <Text style={styles.buttonText}>About Us</Text>
           </TouchableOpacity>
         </View>
@@ -39,15 +46,16 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
 
-  container: {  
+  container: {
     width: "60%",
     height: 410,
     display: "inline-flex",
     flexDirection: "column",
-    alignItems: "flex-start",
+    alignItems: "center",
+    justifyContent: "center",
     gap: 150,
     backgroundColor: "transparent",
-    marginTop: 80,
+    marginTop: 120,
   },
 
   titleContainer: {},
@@ -76,11 +84,14 @@ const styles = StyleSheet.create({
   buttonText: {
     color: "#9B3131",
     textAlign: "center",
-    fontFamily: "Open-Sans",
+    fontFamily: "Inika",
     fontSize: 24,
     fontStyle: "normal",
     fontWeight: "400",
     lineHeight: 50,
     textTransform: "capitalize",
+    textShadowColor: "#000",
+    textShadowOffset: { width: 1, height: -1 },
+    textShadowRadius: 5,
   },
 });

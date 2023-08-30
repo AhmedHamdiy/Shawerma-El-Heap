@@ -1,6 +1,5 @@
 import { StyleSheet, View, Text, Image } from "react-native";
 const RestaurantTitle = () => {
-  
   return (
     <View style={styles.container}>
       {/*The chief-hat logo*/}
@@ -16,7 +15,7 @@ const styles = StyleSheet.create({
   container: {
     display: "flex",
     flexDirection: "column",
-    width: "100%",
+    width: 230,
     height: 175,
     padding: "0px 10px",
     justifyContent: "center",
