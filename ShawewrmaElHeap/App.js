@@ -5,7 +5,8 @@ import { useFonts } from "expo-font";
 import { useCallback } from "react";
 import * as SplashScreen from "expo-splash-screen";
 import { About } from "./Pages/About";
-
+import Menu from "./Pages/Menu";
+import Dish from "./Pages/Dish";
 SplashScreen.preventAutoHideAsync();
 
 export default function App() {
@@ -26,7 +27,7 @@ export default function App() {
 
   return (
     <View style={styles.container} onLayout={onLayoutRootView}>
-      <About />
+      <Menu />
     </View>
   );
 }

@@ -1,81 +1,78 @@
-
-import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, FlatList, Image,Pressable  } from 'react-native';
+import React from "react";
+import {
+  View,
+  Text,
+  StyleSheet,
+  TouchableOpacity,
+  FlatList,
+  Image,
+  Pressable,
+} from "react-native";
 import { FontAwesome } from "@expo/vector-icons";
 
-const Menu_data = require('../Menu.json');
-
-const FoodCard = () => {
-    return (
-        <View>
-			<FlatList
-				data={Menu_data["menu_sections"][0]["dishes"]}
-				renderItem={({ item }) => (
-					<Pressable style={styles.item}>
-                        <Image style={styles.img } source = { item.image_url } />
-						<Text>{item.dish_name}</Text>
-						<View style={{ flexDirection: "row", marginTop: 8 }}>
-							<Text>{item.price+"$"}</Text>
-							<Text> | </Text>
-							<View style={{ flexDirection: "row" }}>
-								<Text style={{ marginRight: 4 }}>{item.rating}</Text>
-								<FontAwesome
-									name="star"
-									size={16}
-									color="yellow"
-								/>
-							</View>
-						</View>
-					</Pressable>
-				)}
-				numColumns={4}
-				columnWrapperStyle={{
-					justifyContent: "space-between",
-				}}
-				showsVerticalScrollIndicator={false}
-			/> 
-		</View>    )    
-}
+const FoodCard = (props) => {
+  return (
+    <View style={styles.container}>
+      <Pressable style={styles.item}>
+        <Image style={styles.img} source={{ uri: props.image_url }} />
+        <Text style={styles.heading}>{props.dish_name}</Text>
+        <View style={styles.details}>
+          <Text style={styles.property}>price: {props.price + "$"}</Text>
+          <View style={{ flexDirection: "row" }}>
+            <Text style={styles.property}>rating: {props.rating} </Text>
+            <FontAwesome
+              name="star"
+              size={16}
+              color="yellow"
+              style={{ marginTop: 6 }}
+            />
+          </View>
+        </View>
+      </Pressable>
+    </View>
+  );
+};
 
 const styles = StyleSheet.create({
-    
-    item: {
-        
-            backgroundColor: "#CF9C20",
-            shadowColor: "#000",
-            shadowOffset: { width: 0, height: 4 },
-            shadowOpacity: 0.1,
-            shadowRadius: 7,
-            borderRadius: 16,
-            marginVertical: 16,
-            alignItems: "center",
-            paddingHorizontal: 8,
-            paddingVertical: 26,
-            marginHorizontal: 16,
-},
-    img: {
-        width: 200,
-        height: 200,
-        resizeMode: "center" 
-},
-    square: {
-            width: 24,
-            height: 24,
-            backgroundColor: '#55BCF6',
-            opacity: 0.4,
-            borderRadius: 5,
-            marginRight: 15,
-},
-    itemText: {
-            maxWidth: '80%',
-},
-    circular: {
-            width: 12,
-            height: 12,
-            borderColor: '#55BCF6',
-            borderWidth: 2,
-            borderRadius: 5,
-},
+  heading: {
+    color: "#000",
+    textAlign: "center",
+    fontSize: 20,
+    fontWeight: "100",
+    fontFamily: "Inika",
+  },
+  property: {
+    color: "#000",
+    textAlign: "left",
+    fontSize: 16,
+    fontFamily: "Inika",
+  },
+  details: {
+    marginHorizontal: 8,
+    alignItems: "left",
+    flexDirection: "column",
+    marginVertical: 4,
+    rowGap: 8,
+  },
+  item: {
+    backgroundColor: "rgba(0, 0, 0, 0.20)",
+    height: 270,
+    width: 220,
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.1,
+    shadowRadius: 7,
+    borderRadius: 16,
+    paddingBottom: 26,
+    marginHorizontal: 10,
+  },
+  img: {
+    width: "90%",
+    height: "60%",
+    marginHorizontal: "5%",
+    marginVertical: 12,
+    borderRadius: 16,
+  },
 });
 
 export default FoodCard;
