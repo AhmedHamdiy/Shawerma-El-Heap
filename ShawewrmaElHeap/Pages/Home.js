@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
   },
 
   container: {  
-    width: "60%",
+    width: "100%",
     height: 410,
     display: "inline-flex",
     flexDirection: "column",
@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
   titleContainer: {},
 
   ButtonsContainer: {
-    width: "100%",
+    width: "60%",
     height: "140px",
     display: "flex",
     flexDirection: "column",
@@ -61,6 +61,7 @@ const styles = StyleSheet.create({
     alignContent: "center",
     gap: 35,
     padding: "20px 20px",
+    marginHorizontal: "20%",
   },
 
   button: {

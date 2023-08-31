@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
     gap: 10,
     borderRadius: 50,
     backgroundColor: "rgba(217, 195, 162, 0.87)",
-    marginBottom: 30,
+    marginVertical: 60,
     marginHorizontal:"15%",
   },
 
