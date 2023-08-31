@@ -1,15 +1,16 @@
 import React from "react";
 import { View, Text, Image } from "react-native";
 import { StyleSheet } from "react-native";
-const Dish = ({ props }) => {
+const Dish = ({ route, navigation }) => {
+  const { image_url, dish_name, description, price, rating } = route.params;
   return (
     <View style={styles.container}>
-      <Image style={styles.img} source={props.image_url} />
-      <Text style={styles.heading}>{props.dish_name}</Text>
+      <Image style={styles.img} source={{ uri: image_url }} />
+      <Text style={styles.heading}>{dish_name}</Text>
       <View style={styles.details}>
-        <Text style={styles.property}>Description: {props.description}</Text>
-        <Text style={styles.property}>Rating: {props.price + " $"} </Text>
-        <Text style={styles.property}>Rating: {props.rating} </Text>
+        <Text style={styles.property}>Description: {description}</Text>
+        <Text style={styles.property}>Price: {price + " EGP"} </Text>
+        <Text style={styles.property}>Rating: {rating} </Text>
       </View>
     </View>
   );
@@ -33,6 +34,7 @@ const styles = StyleSheet.create({
   img: {
     width: "100%",
     height: "50%",
+    borderRadius: 30,
   },
 
   heading: {
@@ -55,6 +57,21 @@ const styles = StyleSheet.create({
     fontSize: 40,
     fontWeight: "400",
     lineHeight: 45,
+  },
+  property: {
+    fontSize: 16,
+    fontWeight: "400",
+    fontFamily: "Inika",
+    lineHeight: 16,
+  },
+
+  details: {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "left",
+    width: "100%",
+    gap: 10,
   },
 });
 

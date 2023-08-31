@@ -15,10 +15,12 @@ import FoodCard from "../components/FoodCard";
 
 const Menu_data = require("../Menu.json");
 
-const Menu = () => {
+const Menu = ({ navigation }) => {
   return (
     <ScrollView style={styles.ScreenContainer}>
-      <RestaurantTitle />
+      <View style={styles.titleComponent}>
+        <RestaurantTitle />
+      </View>
 
       {Menu_data.menu_sections.map((section, index) => (
         <View>
@@ -32,6 +34,8 @@ const Menu = () => {
                   image_url={item.image_url}
                   price={item.price}
                   rating={item.rating}
+                  description={item.description}
+                  navigation={navigation}
                 />
               ))}
             </View>
@@ -47,6 +51,16 @@ const styles = StyleSheet.create({
     backgroundColor: "#CF9C70",
     height: "100%",
     width: "100%",
+  },
+  content: {
+    //alignItems:'center',
+    paddingTop: 100,
+    alignContent: "center",
+  },
+  titleComponent: {
+    marginTop: 100,
+    marginBottom: 20,
+    alignItems: "center",
   },
 
   heading: {

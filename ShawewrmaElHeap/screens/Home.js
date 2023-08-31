@@ -21,6 +21,7 @@ const Home = ({ navigation }) => {
         <View style={styles.ButtonsContainer}>
           <TouchableOpacity
             style={styles.button}
+            activeOpacity={0.7}
             onPress={() => navigation.navigate("Menu")}
           >
             <Text style={styles.buttonText}>Let's Eat!</Text>
@@ -28,6 +29,7 @@ const Home = ({ navigation }) => {
 
           <TouchableOpacity
             style={styles.button}
+            activeOpacity={0.7}
             onPress={() => navigation.navigate("About")}
           >
             <Text style={styles.buttonText}>About Us</Text>
@@ -53,15 +55,15 @@ const styles = StyleSheet.create({
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",
-    gap: 150,
+    gap: 50,
     backgroundColor: "transparent",
-    marginTop: 120,
+    marginTop: 100,
   },
 
   titleContainer: {},
 
   ButtonsContainer: {
-    width: "60%",
+    width: "100%",
     height: "140px",
     display: "flex",
     flexDirection: "column",

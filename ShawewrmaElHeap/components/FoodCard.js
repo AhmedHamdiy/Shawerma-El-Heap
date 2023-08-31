@@ -13,11 +13,23 @@ import { FontAwesome } from "@expo/vector-icons";
 const FoodCard = (props) => {
   return (
     <View style={styles.container}>
-      <Pressable style={styles.item}>
+      <TouchableOpacity
+        style={styles.item}
+        activeOpacity={0.7}
+        onPress={() =>
+          props.navigation.navigate("Dish", {
+            image_url: props.image_url,
+            dish_name: props.dish_name,
+            description: props.description,
+            price: props.price,
+            rating: props.rating,
+          })
+        }
+      >
         <Image style={styles.img} source={{ uri: props.image_url }} />
         <Text style={styles.heading}>{props.dish_name}</Text>
         <View style={styles.details}>
-          <Text style={styles.property}>price: {props.price + "$"}</Text>
+          <Text style={styles.property}>price: {props.price + " EGP"}</Text>
           <View style={{ flexDirection: "row" }}>
             <Text style={styles.property}>rating: {props.rating} </Text>
             <FontAwesome
@@ -28,7 +40,7 @@ const FoodCard = (props) => {
             />
           </View>
         </View>
-      </Pressable>
+      </TouchableOpacity>
     </View>
   );
 };

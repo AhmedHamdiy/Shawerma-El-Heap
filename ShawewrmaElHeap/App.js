@@ -1,14 +1,16 @@
 import { StyleSheet, Text, View, Image } from "react-native";
 
-import Home from "./Screens/Home";
-import { About } from "./Screens/About";
-import MenuPage from "./Screens/MenuPage";
+import Home from "./screens/Home";
+import { About } from "./screens/About";
+import Menu from "./screens/Menu";
+import Dish from "./screens/Dish";
 
 import { useFonts } from "expo-font";
 import { useCallback } from "react";
 import * as SplashScreen from "expo-splash-screen";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { NavBar } from "./components/navBar";
 SplashScreen.preventAutoHideAsync();
 
 export default function App() {
@@ -38,7 +40,8 @@ export default function App() {
         >
           <Stack.Screen name="Home" component={Home} />
           <Stack.Screen name="About" component={About} />
-          <Stack.Screen name="Menu" component={MenuPage} />
+          <Stack.Screen name="Menu" component={Menu} />
+          <Stack.Screen name="Dish" component={Dish} />
         </Stack.Navigator>
       </NavigationContainer>
     </View>

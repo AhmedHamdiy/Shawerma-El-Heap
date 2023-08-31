@@ -2,12 +2,10 @@ import React from "react";
 import { View, StyleSheet, Text, Linking } from "react-native";
 import RestaurantTitle from "../components/RestaurantTitle";
 
-export const About = ({Navigation}) => {
+export const About = ({ navigation }) => {
   return (
     <View style={styles.container}>
-      <View style={styles.titleContainer}>
-        <RestaurantTitle />
-      </View>
+      <RestaurantTitle />
       <Text style={styles.title}>Who We Are?</Text>
       <View style={styles.info}>
         <Text style={styles.body}>
@@ -44,7 +42,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     width: "100%",
     height: "100%",
-    paddingTop: 80,
+    paddingTop: 100,
     paddingBottom: 80,
     paddingLeft: 20,
     paddingRight: 20,
@@ -53,7 +51,8 @@ const styles = StyleSheet.create({
   },
 
   titleContainer: {
-    width: "60%",
+    width: "100%",
+    alignItems: "center",
   },
 
   title: {
