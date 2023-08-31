@@ -10,7 +10,6 @@ import { useCallback } from "react";
 import * as SplashScreen from "expo-splash-screen";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { NavBar } from "./components/navBar";
 SplashScreen.preventAutoHideAsync();
 
 export default function App() {

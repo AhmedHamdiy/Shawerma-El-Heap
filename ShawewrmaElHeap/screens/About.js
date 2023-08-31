@@ -1,7 +1,7 @@
 import React from "react";
 import { View, StyleSheet, Text, Linking } from "react-native";
 import RestaurantTitle from "../components/RestaurantTitle";
-
+import NavBar from "../components/NavBar";
 export const About = ({ navigation }) => {
   return (
     <View style={styles.container}>
@@ -31,6 +31,7 @@ export const About = ({ navigation }) => {
           Facebook Page
         </Text>
       </View>
+      <NavBar navigation={navigation} />
     </View>
   );
 };

@@ -8,6 +8,7 @@ import {
   View,
 } from "react-native";
 import RestaurantTitle from "../components/RestaurantTitle";
+import NavBar from "../components/NavBar";
 
 const Home = ({ navigation }) => {
   return (

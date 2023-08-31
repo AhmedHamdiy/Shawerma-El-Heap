@@ -12,37 +12,48 @@ import {
 import { FontAwesome } from "@expo/vector-icons";
 import RestaurantTitle from "../components/RestaurantTitle";
 import FoodCard from "../components/FoodCard";
+import NavBar from "../components/NavBar";
 
 const Menu_data = require("../Menu.json");
 
 const Menu = ({ navigation }) => {
   return (
-    <ScrollView style={styles.ScreenContainer}>
-      <View style={styles.titleComponent}>
-        <RestaurantTitle />
-      </View>
-
-      {Menu_data.menu_sections.map((section, index) => (
-        <View>
-          <Text style={styles.heading}>{section.section_name}</Text>
-          <ScrollView horizontal={true} key={index} style={styles.foodSection}>
-            <View style={{ flexDirection: "row" }}>
-              {section.dishes.map((item, index) => (
-                <FoodCard
-                  key={index}
-                  dish_name={item.dish_name}
-                  image_url={item.image_url}
-                  price={item.price}
-                  rating={item.rating}
-                  description={item.description}
-                  navigation={navigation}
-                />
-              ))}
-            </View>
-          </ScrollView>
+    <>
+      <ScrollView
+        style={styles.ScreenContainer}
+        contentContainerStyle={styles.content}
+      >
+        <View style={styles.titleComponent}>
+          <RestaurantTitle />
         </View>
-      ))}
-    </ScrollView>
+
+        {Menu_data.menu_sections.map((section, index) => (
+          <View>
+            <Text style={styles.heading}>{section.section_name}</Text>
+            <ScrollView
+              horizontal={true}
+              key={index}
+              style={styles.foodSection}
+            >
+              <View style={{ flexDirection: "row" }}>
+                {section.dishes.map((item, index) => (
+                  <FoodCard
+                    key={index}
+                    dish_name={item.dish_name}
+                    image_url={item.image_url}
+                    price={item.price}
+                    rating={item.rating}
+                    description={item.description}
+                    navigation={navigation}
+                  />
+                ))}
+              </View>
+            </ScrollView>
+          </View>
+        ))}
+      </ScrollView>
+      <NavBar navigation={navigation} />
+    </>
   );
 };
 
@@ -53,9 +64,7 @@ const styles = StyleSheet.create({
     width: "100%",
   },
   content: {
-    //alignItems:'center',
-    paddingTop: 100,
-    alignContent: "center",
+    paddingBottom: 40,
   },
   titleComponent: {
     marginTop: 100,
