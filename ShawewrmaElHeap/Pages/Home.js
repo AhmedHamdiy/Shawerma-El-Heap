@@ -7,7 +7,7 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
-import RestaurantTitle from "../Components/RestaurantTitle";
+import RestaurantTitle from "../components/RestaurantTitle";
 
 const Home = () => {
   return (

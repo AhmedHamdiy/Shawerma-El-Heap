@@ -1,6 +1,6 @@
 import React from "react";
 import { View, StyleSheet, Text, Linking } from "react-native";
-import RestaurantTitle from "../Components/RestaurantTitle";
+import RestaurantTitle from "../components/RestaurantTitle";
 
 export const About = () => {
   return (
