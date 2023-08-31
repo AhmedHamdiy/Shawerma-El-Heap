@@ -53,7 +53,6 @@ const styles = StyleSheet.create({
         fontSize: 32,
         letterSpacing: 0.16,
         marginHorizontal: 16,
-        marginVertical:16,
     },
 
     foodSection: {

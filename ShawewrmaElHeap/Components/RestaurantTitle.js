@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
   container: {
     display: "flex",
     flexDirection: "column",
-    width: "100%",
+    width: "70%",
     height: 175,
     padding: "0px 10px",
     justifyContent: "center",
@@ -25,6 +25,7 @@ const styles = StyleSheet.create({
     borderRadius: 50,
     backgroundColor: "rgba(217, 195, 162, 0.87)",
     marginBottom: 30,
+    marginHorizontal:"15%",
   },
 
   img: {

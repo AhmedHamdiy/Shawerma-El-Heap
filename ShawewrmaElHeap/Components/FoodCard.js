@@ -3,9 +3,9 @@ import { View, Text, StyleSheet, TouchableOpacity, FlatList, Image,Pressable  } 
 import { FontAwesome } from "@expo/vector-icons";
 
 const FoodCard = (props) => {
-    return <View>
+    return <View style={styles.container}>
             <Pressable style={styles.item}>
-            <Image style={styles.img} source={props.image_url} />
+            <Image style={styles.img} source={{ uri: props.image_url }} />
                 <Text style={styles.heading}>{props.dish_name}</Text>
                 <View style={styles.details}>
                     <Text style={styles.property}>price: {props.price + "$"}</Text>
@@ -14,7 +14,8 @@ const FoodCard = (props) => {
                         <FontAwesome
                             name="star"
                             size={16}
-                            color="yellow"
+                        color="yellow"
+                        style={{ marginTop: 6 }}
                         />
                     </View>
                 </View>
@@ -27,39 +28,41 @@ const styles = StyleSheet.create({
     heading: {
         color: "#000",
         textAlign: "center",
-        fontSize: 16,
-        fontWeight:"bold",
+        fontSize: 20,
+        fontWeight: "100",
+        fontFamily: "Inika",
     },
     property: {
         color: "#000",
         textAlign: "left",
-        fontSize: 14,
+        fontSize: 16,
+        fontFamily: "Inika",
     },
     details: {
-        marginHorizontal: 16,
+        marginHorizontal: 8,
         alignItems: "left",
         flexDirection: "column",
-        marginVertical: 8,
+        marginVertical: 4,
         rowGap: 8,
     },
     item: {
-        height: 200,
-        width: 150,
-        backgroundColor: "#CF9C20",
+        backgroundColor: "rgba(0, 0, 0, 0.20)",
+        height: 270,
+        width: 220,
         shadowColor: "#000",
         shadowOffset: { width: 0, height: 4 },
         shadowOpacity: 0.1,
         shadowRadius: 7,
         borderRadius: 16,
-        marginVertical: 16,
         paddingBottom: 26,
-        marginHorizontal: 16,
+        marginHorizontal: 10,
 },
     img: {
-        width: "100%",
+        width: "90%",
         height: "60%",
-        resizeMode: "center",
-        marginBottom: 10,
+        marginHorizontal: "5%",
+        marginVertical: 12,
+        borderRadius: 16,
     },
 });
 
