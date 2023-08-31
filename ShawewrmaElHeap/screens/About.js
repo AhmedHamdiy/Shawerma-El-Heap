@@ -2,7 +2,7 @@ import React from "react";
 import { View, StyleSheet, Text, Linking } from "react-native";
 import RestaurantTitle from "../components/RestaurantTitle";
 
-export const About = () => {
+export const About = ({Navigation}) => {
   return (
     <View style={styles.container}>
       <View style={styles.titleContainer}>

@@ -1,12 +1,14 @@
-import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View, Image } from "react-native";
-import Home from "./Pages/Home";
+
+import Home from "./Screens/Home";
+import { About } from "./Screens/About";
+import MenuPage from "./Screens/MenuPage";
+
 import { useFonts } from "expo-font";
 import { useCallback } from "react";
 import * as SplashScreen from "expo-splash-screen";
-import { About } from "./Pages/About";
-import Menu from "./Pages/Menu";
-import Dish from "./Pages/Dish";
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
 SplashScreen.preventAutoHideAsync();
 
 export default function App() {
@@ -25,9 +27,20 @@ export default function App() {
     return null;
   }
 
+  const Stack = createNativeStackNavigator();
+
   return (
     <View style={styles.container} onLayout={onLayoutRootView}>
-      <Menu />
+      <NavigationContainer>
+        <Stack.Navigator
+          initialRouteName="Home"
+          screenOptions={{ headerShown: false }}
+        >
+          <Stack.Screen name="Home" component={Home} />
+          <Stack.Screen name="About" component={About} />
+          <Stack.Screen name="Menu" component={MenuPage} />
+        </Stack.Navigator>
+      </NavigationContainer>
     </View>
   );
 }
@@ -35,9 +48,6 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
   },
   img: {
     width: "100%",
@@ -46,5 +56,16 @@ const styles = StyleSheet.create({
 
   text: {
     fontFamily: "Irish-Grover",
+  },
+
+  screen: {
+    headerTitleStyle: {
+      fontFamily: "Inika",
+      fontSize: 22,
+      color: "#9B3131",
+    },
+    headerStyle: {
+      backgroundColor: "rgba(217, 195, 162, 0.87)",
+    },
   },
 });
