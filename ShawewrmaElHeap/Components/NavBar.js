@@ -1,26 +1,42 @@
 import React from "react";
-import { View, StyleSheet, Text, Image, Pressable } from "react-native";
+import {
+  View,
+  StyleSheet,
+  Text,
+  Image,
+  Pressable,
+  TouchableOpacity,
+} from "react-native";
 
 const NavBar = ({ navigation }) => {
   return (
     <View style={styles.container}>
-      <Pressable style={styles.col} onPress={() => navigation.navigate("Home")}>
+      <TouchableOpacity
+        style={styles.col}
+        activeOpacity={0.7}
+        onPress={() => navigation.navigate("Home")}
+      >
         <Image style={styles.img} source={require("../images/home.png")} />
         <Text style={styles.text}>Home</Text>
-      </Pressable>
+      </TouchableOpacity>
 
-      <Pressable style={styles.col} onPress={() => navigation.navigate("Menu")}>
+      <TouchableOpacity
+        style={styles.col}
+        activeOpacity={0.7}
+        onPress={() => navigation.navigate("Menu")}
+      >
         <Image style={styles.img} source={require("../images/menu.png")} />
         <Text style={styles.text}>Menu</Text>
-      </Pressable>
+      </TouchableOpacity>
 
-      <Pressable
+      <TouchableOpacity
         style={styles.col}
+        activeOpacity={0.7}
         onPress={() => navigation.navigate("About")}
       >
         <Image style={styles.img} source={require("../images/about.png")} />
         <Text style={styles.text}>About</Text>
-      </Pressable>
+      </TouchableOpacity>
     </View>
   );
 };

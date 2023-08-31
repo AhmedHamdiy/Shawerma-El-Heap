@@ -1,6 +1,8 @@
 import React from "react";
 import { View, Text, Image } from "react-native";
 import { StyleSheet } from "react-native";
+import NavBar from "../components/NavBar";
+
 const Dish = ({ route, navigation }) => {
   const { image_url, dish_name, description, price, rating } = route.params;
   return (
@@ -12,6 +14,7 @@ const Dish = ({ route, navigation }) => {
         <Text style={styles.property}>Price: {price + " EGP"} </Text>
         <Text style={styles.property}>Rating: {rating} </Text>
       </View>
+      <NavBar navigation={navigation} />
     </View>
   );
 };
