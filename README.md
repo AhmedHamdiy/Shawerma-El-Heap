@@ -1,7 +1,7 @@
 # Shawerma-El-Heap
 Shawerma-El-Heap is a restaurant mobile application that allows users to view restaurant's menu and information about the restaurant as the location , opening & cloing time & contact info.
 
-<hr>
+<br>
 
 📝 This readme file provides instructions on how to run and use the Menu App developed using React Native for the Computer Department Summer Training (CST). The app is built with Expo, a toolchain and platform for universal React applications.
 
@@ -61,17 +61,18 @@ To get the Menu App up and running, follow these steps:
 Here are some screenshots of the Menu App:
 
 ### Home Page:
-- 🖼️ ![Home](https://github.com/Ashraf-Bahy-Org/Shawerma-El-Heap/assets/111378492/0e333375-9969-4bed-bd7d-a6384f86e41c)
+-  ![Home](https://github.com/Ashraf-Bahy-Org/Shawerma-El-Heap/assets/111378492/0e333375-9969-4bed-bd7d-a6384f86e41c)
 
 - ### Menu Page:
-- 🖼️ ![Menu](https://github.com/Ashraf-Bahy-Org/Shawerma-El-Heap/assets/111378492/8ff92d2b-da20-4dc3-bc9a-44908cc2eff4)
+-  ![Uploading Menu.png…]()
+
 
 ### Item Page:
-- 🖼️ ![Restaurant App design 4](https://github.com/Ashraf-Bahy-Org/Shawerma-El-Heap/assets/111378492/381be534-4162-4c08-949a-cebe0b73d50d)
+-  ![Restaurant App design 4](https://github.com/Ashraf-Bahy-Org/Shawerma-El-Heap/assets/111378492/381be534-4162-4c08-949a-cebe0b73d50d)
 
 
 ### About Page:
-- 🖼️ ![About Us](https://github.com/Ashraf-Bahy-Org/Shawerma-El-Heap/assets/111378492/44dd634a-af31-4efe-badc-94a3755357dd)
+-  ![About Us](https://github.com/Ashraf-Bahy-Org/Shawerma-El-Heap/assets/111378492/44dd634a-af31-4efe-badc-94a3755357dd)
 
 ## Contributors
 
