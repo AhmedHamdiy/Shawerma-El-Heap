@@ -78,7 +78,7 @@ Here are some screenshots of the Menu App:
 
 The following contributors have worked on the Menu App:
 
-- 👤 Ahmed Hamdy ([@johndoe](https://github.com/AhmedHamdiy))
-- 👤 Abdelruhman Samy ([@janesmith](https://github.com/AbdelruhmanSamy))
+- 👤 Ahmed Hamdy ([@AhmedHamdiy](https://github.com/AhmedHamdiy))
+- 👤 Abdelruhman Samy ([@AbdelruhmanSamy](https://github.com/AbdelruhmanSamy))
 
 Please feel free to reach out to any of the contributors if you have any questions or feedback regarding the app.
