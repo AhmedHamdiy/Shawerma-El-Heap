@@ -41,7 +41,7 @@ To get the Menu App up and running, follow these steps:
 4. ▶️ Start the Expo development server:
 
    ````bash
-   expo start
+   npx expo start
    ```
 
    This will open the Expo Developer Tools in your default web browser.
