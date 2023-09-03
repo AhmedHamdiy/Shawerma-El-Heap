@@ -29,7 +29,7 @@ To get the Menu App up and running, follow these steps:
 2. 📂 Navigate to the project directory:
 
    ````bash
-   cd menu-app
+   cd ShawewrmaElHeap
    ```
 
 3. 🔧 Install the project dependencies:
