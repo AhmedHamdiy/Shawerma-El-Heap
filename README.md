@@ -56,24 +56,6 @@ To get the Menu App up and running, follow these steps:
 
 6. ✅ The Menu App should now be running on your device or emulator.
 
-## Photos
-
-Here are some screenshots of the Menu App:
-
-### Home Page:
-  ![Home](https://github.com/Ashraf-Bahy-Org/Shawerma-El-Heap/assets/111378492/0e333375-9969-4bed-bd7d-a6384f86e41c)
-
-### Menu Page:
-  ![Menu](https://github.com/Ashraf-Bahy-Org/Shawerma-El-Heap/assets/111378492/ba33a58d-aa6e-4406-be56-2b268b22de17)
-
- 
-### Item Page:
-  ![Restaurant App design 4](https://github.com/Ashraf-Bahy-Org/Shawerma-El-Heap/assets/111378492/6e08cc54-e967-46ee-81f0-fb7fd0d486d0)
-
-
-### About Page:
-  ![About Us](https://github.com/Ashraf-Bahy-Org/Shawerma-El-Heap/assets/111378492/44dd634a-af31-4efe-badc-94a3755357dd)
-
 ## Contributors
 
 The following contributors have worked on the Menu App:
